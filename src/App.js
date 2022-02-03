@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.scss";
+import BlogPost from "./BlogPost/BlogPost";
 
 function App() {
   const [error, setError] = React.useState(null);
@@ -15,7 +16,7 @@ function App() {
         (data) => {
           setIsLoaded(true);
           setPosts(data);
-          console.log(data)
+          console.log(data);
         },
         (error) => {
           setIsLoaded(true);
@@ -32,7 +33,7 @@ function App() {
     return (
       <div className="App">
         {posts.map((post) => (
-          <li key={post.id}></li>
+          <BlogPost key={post.id} />
         ))}
       </div>
     );
