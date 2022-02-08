@@ -5,9 +5,9 @@ I've used create-react-app as it was the fastest way for me to stand up a runabl
 
 ## To run this project
 
-1. Clone this repository and naviagate to the root folder
+1. Clone this repository and navigate to its root folder.
 2. Install node modules with `npm i`
-3. run the app with `npm start`. It should open your primary browser on the page when the run script completes but if not:
+3. run the app with `npm start`. It should open your primary browser on the correct page when the run script completes but if not:
 4. visit localhost:3000 in your browser when the run script is successful.
 
 ### tests
