@@ -4,22 +4,19 @@ import isoToStringDate from "../utils/dateUtils";
 
 function BlogPost({ post }) {
   return (
-    <div className="post-p-card--highlighted col-4">
+    <div className="blog-p-card--highlighted col-4">
       <header className="p-card__header">
-        <h5 className="p-muted-heading u-no-margin--bottom">
+        <h4 className="p-muted-heading u-no-margin--bottom">
           Cloud and Server
-        </h5>
+        </h4>
       </header>
-      <hr className="is-muted" />
+      {/* <hr className="is-muted" /> */}
 
       <div className="p-card__content">
         <img
-          className="p-card__image"
+          className="blog-p-card__image"
           alt=""
-          height="185"
-          loading="lazy"
           src={post.featured_media}
-          width="330"
         />
         <h3 className="p-heading--4">
           <a href={post.link}>{post.title.rendered}</a>
@@ -33,7 +30,7 @@ function BlogPost({ post }) {
             on {isoToStringDate(post.date)}
           </em>
         </p>
-        <hr className="is-muted u-sv1" />
+        {/* <hr className="is-muted u-sv1" /> */}
       </div>
       <footer className="p-card__footer">
         <p className="">Article</p>

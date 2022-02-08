@@ -3,7 +3,7 @@
 
 $color-brand: rgb(168, 124, 160);
 
-.post-p-card--highlighted {
+.blog-p-card--highlighted {
   @extend %p-card--highlighted;
 
   @include vf-highlight-bar(
@@ -11,4 +11,20 @@ $color-brand: rgb(168, 124, 160);
     $position: top,
     $over-border: false
   );
+
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-p-card__image {
+  width: 100%;
+  display: block;
+  margin-bottom: $spv--small;
+  margin-top: $spv--small;
+}
+
+.p-card__footer {
+  margin-top: auto;
+  border-top: 1px dotted $color-mid-light;
+  padding-top: $spv--large;
 }
