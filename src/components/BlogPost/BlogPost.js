@@ -1,6 +1,5 @@
 import React from "react";
 import "./BlogPost.scss";
-import isoToStringDate from "../../utils/dateUtils";
 
 function BlogPost({
   postTopic,
@@ -11,7 +10,7 @@ function BlogPost({
   postType,
   authorName,
   authorLink,
-  isoPostDate,
+  datePosted,
 }) {
   return (
     <div className="blog-p-card--highlighted col-4">
@@ -32,7 +31,7 @@ function BlogPost({
         <p>
           <em>
             by <a href={authorLink}>{authorName}</a> on{" "}
-            {isoToStringDate(isoPostDate)}
+            {datePosted}
           </em>
         </p>
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.scss";
 import BlogPost from "./components/BlogPost/BlogPost";
+import isoToStringDate from "./utils/dateUtils";
 
 function App() {
   const [error, setError] = React.useState(null);
@@ -44,7 +45,7 @@ function App() {
               postType={"Article"}
               authorName={post._embedded.author[0].name}
               authorLink={post._embedded.author[0].link}
-              isoPostDate={post.date}
+              datePosted={isoToStringDate(post.date)}
             />
           ))}
         </div>
