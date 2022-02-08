@@ -1,0 +1,14 @@
+@import "vanilla-framework";
+@include vanilla;
+
+$color-brand: rgb(168, 124, 160);
+
+.post-p-card--highlighted {
+  @extend %p-card--highlighted;
+
+  @include vf-highlight-bar(
+    $bg-color: $color-brand,
+    $position: top,
+    $over-border: false
+  );
+}
