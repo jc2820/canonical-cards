@@ -34,7 +34,18 @@ function App() {
       <div className="App">
         <div className="row u-equal-height">
           {posts.map((post) => (
-            <BlogPost key={post.id} post={post} />
+            <BlogPost
+              key={post.id}
+              postTopic={""}
+              postImageSrc={post.featured_media}
+              postImageAlt={""}
+              postLink={post.link}
+              postTitle={post.title.rendered}
+              postType={""}
+              authorName={post._embedded.author[0].name}
+              authorLink={post._embedded.author[0].link}
+              isoPostDate={post.date}
+            />
           ))}
         </div>
       </div>
