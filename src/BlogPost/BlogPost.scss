@@ -1,7 +1,7 @@
+$color-brand: rgb(168, 124, 160);
+
 @import "vanilla-framework";
 @include vanilla;
-
-$color-brand: rgb(168, 124, 160);
 
 .blog-p-card--highlighted {
   @extend %p-card--highlighted;
@@ -9,7 +9,7 @@ $color-brand: rgb(168, 124, 160);
   @include vf-highlight-bar(
     $bg-color: $color-brand,
     $position: top,
-    $over-border: false
+    $over-border: true
   );
 
   display: flex;
@@ -23,8 +23,14 @@ $color-brand: rgb(168, 124, 160);
   margin-top: $spv--small;
 }
 
-.p-card__footer {
+.blog-p-card__footer {
   margin-top: auto;
   border-top: 1px dotted $color-mid-light;
   padding-top: $spv--large;
 }
+
+.blog-p-card__header {
+  border-bottom: 1px dotted $color-mid-light;
+  padding-bottom: $spv--large;
+}
+
