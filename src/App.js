@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.scss";
-import BlogPost from "./BlogPost/BlogPost";
+import BlogPost from "./components/BlogPost/BlogPost";
 
 function App() {
   const [error, setError] = React.useState(null);
@@ -36,12 +36,12 @@ function App() {
           {posts.map((post) => (
             <BlogPost
               key={post.id}
-              postTopic={""}
+              postTopic={"Cloud and Server"}
               postImageSrc={post.featured_media}
               postImageAlt={""}
               postLink={post.link}
               postTitle={post.title.rendered}
-              postType={""}
+              postType={"Article"}
               authorName={post._embedded.author[0].name}
               authorLink={post._embedded.author[0].link}
               isoPostDate={post.date}

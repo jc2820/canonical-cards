@@ -1,6 +1,6 @@
 import React from "react";
 import "./BlogPost.scss";
-import isoToStringDate from "../utils/dateUtils";
+import isoToStringDate from "../../utils/dateUtils";
 
 function BlogPost({
   postTopic,
@@ -17,7 +17,7 @@ function BlogPost({
     <div className="blog-p-card--highlighted col-4">
       <header className="blog-p-card__header">
         <h4 className="p-muted-heading u-no-margin--bottom">
-          {postTopic || "Cloud and Server"}
+          {postTopic}
         </h4>
       </header>
       <div className="p-card__content">
@@ -37,7 +37,7 @@ function BlogPost({
         </p>
       </div>
       <footer className="blog-p-card__footer">
-        <p className="">{postType || "Article"}</p>
+        <p className="">{postType}</p>
       </footer>
     </div>
   );
