@@ -17,7 +17,6 @@ function App() {
         (data) => {
           setIsLoaded(true);
           setPosts(data);
-          console.log(data);
         },
         (error) => {
           setIsLoaded(true);
