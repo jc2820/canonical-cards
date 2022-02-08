@@ -9,7 +9,7 @@ $color-brand: rgb(168, 124, 160);
   @include vf-highlight-bar(
     $bg-color: $color-brand,
     $position: top,
-    $over-border: true
+    $over-border: false
   );
 
   display: flex;

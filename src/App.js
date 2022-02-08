@@ -33,7 +33,7 @@ function App() {
   } else {
     return (
       <div className="App">
-        <div className="row u-equal-height">
+        <div className="row u-equal-height u-clearfix">
           {posts.map((post) => (
             <BlogPost
               key={post.id}
