@@ -32,9 +32,11 @@ function App() {
   } else {
     return (
       <div className="App">
-        {posts.map((post) => (
-          <BlogPost key={post.id} />
-        ))}
+        <div className="row u-equal-height">
+          {posts.map((post) => (
+            <BlogPost key={post.id} post={post} />
+          ))}
+        </div>
       </div>
     );
   }
